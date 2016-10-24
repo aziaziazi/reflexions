@@ -1,0 +1,52 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+  - quick > time saved
+  - lines on top of each others > easy seeing the differencies
+  - all diffs shown together > that help to resolve the bug
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+  - Get back to a working state
+  - Retrieve an implementation of a library/tool/service used before
+  - Start a new project with an early version of another similar project
+  - Get back a file delated by error
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+  PRO Mannually
+  - logically separated commits	> better to understand
+                	> avoid bug (commit only if it works)
+  - not overcommited	> save space
+            > better to understand
+ 	PRO Automatically
+ 	- don't bother / use time
+ 	- don't forget
+ 	- sometimes intelligeant auto (google doc)
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+  - Changes in multiple files are sometimes related, like styles or scipts of a div
+  - Sometimes MANY files created or delated (dependencies)
+  - Google Docs treat files separately, I think because it's more often used for
+  	independants files.
+
+How can you use the commands git log and git diff to view the history of files?
+  - git log gives a breaf summary of the histroy of the commits made
+  - git diff show the differences between two versions of a file.
+  - With git diff, I can choose to compare two adgencent commits to see the small
+  	changes during a single commit, or see big changes by selecting far commits
+
+How might using version control make you more confident to make changes that
+could break something?
+  - I'm not aware to loose any "good state" because they are all saved
+    (and shown with "git   log")
+  - git diff helps me to find the line by highlithing the diffs (to find a mistake for exemple)
+  - Git log also shows me the changes I just made (that helps to avoid typos)
+  - Git checkout is a quick and easy way to come back to a previous version to see/test it
+
+Now that you have your workspace set up, what do you want to try using Git for?
+  - Saving my version of Pantin64 in a more effective way
+  - create branches and merge them
+  - commit some changes on other people's repositories
+  - duplicating some others people repositories

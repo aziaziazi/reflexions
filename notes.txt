@@ -1,0 +1,61 @@
+git : changes based on lines > don't use lines too long, with many concepts
+
+1 commit per logical change :
+	- add a new functionnality
+	- correct a bug
+Only one purpose, one location:
+	- two typo corrections in diff folders > two commits
+
+
+bash:
+
+diff old-file.txt new-file.txt
+	>> show the diff
+
+git diff old-file.txt new-file.txt
+	>> show the diff, styled
+	old-file.txt can be a file name, a commit ID or 4 first letters of commit ID (or more)
+	with no arguments, show the diff between working dir and staged area
+	--staged show the diff between staged area and repository
+
+git show [child]
+	>> show the diff with the parentt:
+		quickier than diif [child] [parent] and usefull in case of several branches merged
+
+git log
+	--stat
+	>> statistics about which files have changed in each commits
+	--graph [branch to see] [branche to see] [branch to see]
+	>> Show the branches graph
+	-- oneline
+	>> only one line, easier to read
+	-n1
+	>> only show last commit
+
+git checkout [#commit]
+	>> come back to a previous version
+	checkout master >> come back to the master HEAD
+	-b [new-branch]
+	>> create a branch and checkout to it.
+	Same as git branch [new-branch] + git checkout [new-branch]
+
+git reset [file]
+	>> remove file form the staging area
+	-hard >> discard any changes in working directory AND staging area. Be carrefull, all is back to repository last commit and no way to come back. Before, run "git diff" and "git diff --staged" to check if its ok !
+
+git add [file]
+	>> add [file] to the staging area (that will be commited)
+	Good to choose what will be commited and what won't.
+
+git commit
+	>> commit changes
+
+git branch
+	>> show the branches and the current checked out one
+	[new-branch] >> create a new branch (but not check out to it)
+	[branch name] -d >>delete the branch
+
+git merge [branch2]
+	>> merge branch2 to current checked out branch.
+	>> merge [branch1] [branch2] better to be sure what's merge.
+		Order doesn't matter, it's the current checked out branch that remain.
