@@ -1,13 +1,9 @@
-git : changes based on lines > don't use lines too long, with many concepts
+/// COMMANDS
 
-1 commit per logical change :
-	- add a new functionnality
-	- correct a bug
-Only one purpose, one location:
-	- two typo corrections in diff folders > two commits
+git clone [URL]
+	>> Clone a repository on my computer. Allready remote !!
 
-
-bash:
+git init
 
 diff old-file.txt new-file.txt
 	>> show the diff
@@ -71,3 +67,18 @@ git remote
 
 git push [remote] [branch]
 	>> push all the commits accessibles by the branch to the remote
+
+git pull [remote] [branch]
+	>> pull all the commits accessibles by the branch from the remote
+
+
+/// TIPS
+
+git : changes based on lines > don't use lines too long, with many concepts
+
+1 commit per logical change :
+	- add a new functionnality
+	- correct a bug
+Only one purpose, one location:
+	- two typo corrections in diff folders > two commits
+
