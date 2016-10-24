@@ -1,0 +1,55 @@
+What happens when you initialize a repository? Why do you need to do it?
+	- .git folder is created
+	- It's mandatory to start a new projet that use GIT version control
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+	- The working directory is the place where we can see the files we work with.
+		It's the entire folder we see
+	- The repository are the files of each commits
+	- The staging area the files in the working repository which are tracked to be
+		commited commited to the repository
+
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+	- "git status" to first check the modifyed files
+	-	"git diff --staged" show what will be commitied (precise lines)
+	- "git diff" show what is left out of this commit (changes in the cwd not staged)
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+	- try a new feature / library / config and keep track of it separately
+	- Add a new language without modifying the main
+	- refactor
+	- make a specific version to show
+	- Anytime I do somehting "different", context switching
+	- correct bugs : master branch always works, never breaks. Dev branch : active work.
+
+	- branches allows me to modify, commit and see/checkout history of differents version
+	separatelly, without afecting each others
+
+How do the diagrams help you visualize the branch structure?
+	- The graphic style of diagram present the branches in a way more is more evident
+	- Keep track which branch contain which commit : I can see what commits has been made
+	BEFORE forking (therefore included in both versions) and AFTER forking (only included
+	in the related branch)
+
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+	- A new commit is created by an algorithm taking into account the two last commits
+	of each branches and the most recent in cummon (the one where they divided).
+	- If lines were added, they are added to the commit
+	- If lines were deleted, they are deleted to the commit
+	- The new commit takes is labeled with the current checked-out branch
+	- The diagram show that the new commit get BOTH branches as parents : all previous commits
+	are accessible by it. Therefore we can salefy delete the merged branch (we delete the label)
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
+  PRO 	- quick
+  			- manual not always needed (in case of modifications in very differents area)
+  CONS	- better to be sure there's no error
+  			- sometimes unrelated modifications and we don't want them to be comited (or merged)
+  				>>use staging area
