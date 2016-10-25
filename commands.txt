@@ -71,6 +71,12 @@ git push [remote] [branch]
 git pull [remote] [branch]
 	>> pull all the commits accessibles by the branch from the remote
 
+git fetch
+	>>  update the local copy of remote/master (or origin/master) in a new branch by pulling the modified
+	remote version
+
+git pull origin master ==	git fetch origin
+													git merge master origin/master
 
 /// TIPS
 
@@ -81,4 +87,3 @@ git : changes based on lines > don't use lines too long, with many concepts
 	- correct a bug
 Only one purpose, one location:
 	- two typo corrections in diff folders > two commits
-
