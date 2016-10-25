@@ -36,5 +36,12 @@ and what would be harder?
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
-
-    Fill in your answer here
+	- Making change in a separate branch allow to keep changes appart. That helps
+	to avoid bugs and let work on different variants at the same time.
+	- Making changes directly to master can be more error prone.
+	However, it can save time because the process of commiting/pulling/pushing is simplier.
+	Also in a collaborative repo, you only have to merge and fix bugs on one single branch.
+	Still, I'd try to work with a separate branch as oftent as possible
+	to avoid breaking my master.
+	- Another approach would be to work on a "dev" branch that is king of a "buffer"
+	for the master.
