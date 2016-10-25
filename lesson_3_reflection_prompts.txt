@@ -14,7 +14,7 @@ use one instead of another?
 	features, prod branch (master), pre-pro branch (staged ?) and others versions.
 	- clones : a copy of a reposotory. No link at all to it.
 	I'd use clone for a project unrelated to the original one, if just want to download it
-	to see/use a part or i I don't want to be linked to it
+	to see/use a part or if I don't want to be linked to it
 	- forks : a clone linked to the original one by github.
 
 What is the benefit of having a copy of the last known state of the remote
@@ -23,8 +23,16 @@ stored locally?
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
-
-    Fill in your answer here
+	- Github makes it easier to collaborate on the same projects :
+		- branches helps to work on differents features and merge them when ready
+		- master branch keeps everyone up to date
+		- log of commits gives quick info of what's the changes made by others
+		- pull requests gives a space to discuss about merging files with tools like
+		line-comments, reviews and integrated commits.
+	- however, I can't say Github is evident at the first place. So If I'd like to
+	make a quick work with someone that doesn't know it, I have to explain him how it works,
+	to help him to use it or to work with him in another way (like sending files with
+	email/dropbox and talking over email/chat)
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
