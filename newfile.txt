@@ -1,1 +1,3 @@
-lalanewfile
+//TEST PURPOSE
+
+I'm learning git and try to see how pulling (fetch + merge) will affect my local repository.
