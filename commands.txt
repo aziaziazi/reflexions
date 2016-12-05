@@ -39,7 +39,9 @@ git checkout [#commit]
 git reset [file]
 	>> remove file form the staging area
 	-hard
-		>> discard any changes in working directory AND staging area. Be carrefull, all is back to repository last commit and no way to come back. Before, run "git diff" and "git diff --staged" to check if its ok !
+		>> discard any changes in working directory AND staging area.
+		Be carrefull, all is back to repository last commit and no way to come back.
+		Before, run "git diff" and "git diff --staged" to check if its ok !
 
 git add [file]
 	>> add [file] to the staging area (that will be commited)
@@ -77,6 +79,13 @@ git fetch
 
 git pull origin master ==	git fetch origin
 													git merge master origin/master
+
+Fork (not a command)
+	Clone a repository of someone else, but keep it linked to it
+	Add a remote called "upstream" to the original one.
+
+git rebase -i
+	Tool to modifie commits that are not pushed
 
 /// TIPS
 
